@@ -5,5 +5,3 @@ import Carousel from "../components/home/Carousel.vue";
 <template>
   <Carousel></Carousel>
 </template>
-
-<style lang="scss" scoped></style>

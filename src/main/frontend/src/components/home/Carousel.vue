@@ -1,8 +1,3 @@
-<script setup>
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-</script>
-
 <template>
   <div class="container">
     <div class="row">
@@ -108,19 +103,5 @@ import "bootstrap/dist/js/bootstrap.min.js";
 </template>
 
 <style lang="scss" scoped>
-.container {
-  max-width: none;
-  .col-sm-12 {
-    padding: 0;
-  }
-  .carousel-item {
-    img {
-      height: 86vh;
-      object-fit: cover;
-    }
-  }
-  button {
-    background: rgba(0, 0, 0, 0.5);
-  }
-}
+@import "../../assets/sass/home/carousel.scss";
 </style>

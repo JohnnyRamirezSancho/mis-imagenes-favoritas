@@ -1,0 +1,17 @@
+@import '../variables';
+.container {
+    max-width: none;
+    .col-sm-12 {
+      padding: 0;
+    }
+    .carousel-item {
+      img {
+        height: 86vh;
+        object-fit: cover;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      background: $darkGreyTrans;
+    }
+  }
