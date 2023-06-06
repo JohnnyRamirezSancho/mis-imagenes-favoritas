@@ -1,6 +1,10 @@
 <script setup>
 import PopUpCardGallery from './PopUpCardGallery.vue';
 
+const props = defineProps({
+  item: { type: Object },
+});
+
 function showCard(id) {
   const visor = document.getElementById(id)
   console.log(id);
@@ -11,22 +15,22 @@ function showCard(id) {
 
 <template>
   <div class="cardGallery">
-    <div class="openVisor">
-      <button @click="showCard('patata')" class="buttonHideCard">X</button>
-    </div>
     <div class="imageCardGallery">
       <figure>
         <img
-          src="../../assets/img/Carousel/cripta-sagrada-familia-01.jpg"
-          alt=""
+        :src="`${item.imageGallery.image}`"
+        :alt="`${item.title}`"
         />
       </figure>
     </div>
+    <div class="openVisor">
+      <img src="../../assets/img/magnifying-glass-icono.png" alt="Open image" @click="showCard(`${item.id}`)">
+    </div>
     <div class="textCardGallery">
-      <h2>Image 01</h2>
+      <h2>{{ item.title }}</h2>
     </div>
   </div>
-  <PopUpCardGallery></PopUpCardGallery>
+  <PopUpCardGallery :item="item"></PopUpCardGallery>
 </template>
 
 <style lang="scss" scoped>

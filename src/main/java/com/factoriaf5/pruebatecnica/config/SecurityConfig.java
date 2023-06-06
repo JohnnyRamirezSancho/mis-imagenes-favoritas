@@ -38,7 +38,7 @@ public class SecurityConfig {
                                                 .logoutUrl("/api/logout")
                                                 .deleteCookies("JSESSIONID"))
                                 .authorizeHttpRequests((auth) -> auth
-                                                .antMatchers("/api").permitAll()
+                                                .antMatchers("/**").permitAll()
                                                 .anyRequest()
                                                 .authenticated())
                                 .userDetailsService(service)

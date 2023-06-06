@@ -10,6 +10,6 @@ export default class ApiRepository {
     }
 
     chooseApi() {
-        if(this.api === "gallery") return new GalleryRepository;
+        if(this.api === "itemsGallery") return new GalleryRepository;
     }
 }

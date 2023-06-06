@@ -1,0 +1,19 @@
+@import './variables';
+
+.active a,
+.page-link:hover {
+  background: $green;
+  border-radius: 3px;
+  color: white;
+}
+.pagination, 
+.page-link {
+  background: none;
+  color: $green;
+  border: none;
+  box-shadow: none;
+}
+
+.pagination {
+  margin-bottom: 50px;
+}
