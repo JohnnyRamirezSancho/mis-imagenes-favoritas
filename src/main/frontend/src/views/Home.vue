@@ -3,5 +3,7 @@ import Carousel from "../components/home/Carousel.vue";
 </script>
 
 <template>
-  <Carousel></Carousel>
+  <main>
+    <Carousel></Carousel>
+  </main>
 </template>

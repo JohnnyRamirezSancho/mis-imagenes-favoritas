@@ -8,6 +8,7 @@ export default class AuthService {
 	}
 
 	async login(username, password) {
-		this.#conn.login(username, password);
+		return this.#conn.login(username, password);
+		 
 	}
 }

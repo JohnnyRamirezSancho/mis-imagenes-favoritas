@@ -1,0 +1,17 @@
+main {
+    background-image: url(/src/assets/img/login-flores.jpg);
+    background-size: cover;
+    height: 86vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 576px) {
+    main {
+      height: auto;
+    }
+  }
