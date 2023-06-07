@@ -90,8 +90,7 @@ public class ItemGalleryService {
         ImageGallery imageToDelete = itemGalleryToDeleteImage.getImageGallery();
         itemGalleryToDeleteImage.setImageGallery(null);
         imageGalleryRepository.delete(imageToDelete);
-        String uploadDir = RouteFileUploadImage.pathToSaveImage("imagesGallery");
-        Path fileToDeletePath = Paths.get(uploadDir + imageToDelete.getImage());
+        Path fileToDeletePath = Paths.get("src/main/resources/static/" + imageToDelete.getImage());
         Files.delete(fileToDeletePath);
     }
 

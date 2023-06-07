@@ -13,11 +13,15 @@ function hideCard(id) {
   <div class="invisible popup" :id="`${item.id}`">
     <div class="cardDetails">
       <figure>
-        <img :src="`http://localhost:8080/${item.imageGallery.image}`" />
+        <img
+          :src="`http://localhost:8080/${item.imageGallery.image}`"
+          :alt="`${item.title}`"
+          v-if="item.imageGallery"
+        />
       </figure>
       <div class="closeVisor">
         <img
-          src="../../assets/img/closed-icon.png"
+          src="../../../assets/img/closed-icon.png"
           alt="Close image"
           @click="hideCard(`${item.id}`)"
         />
@@ -27,5 +31,5 @@ function hideCard(id) {
 </template>
 
 <style lang="scss" scoped>
-@import '../../assets/sass/gallery/popupcardgallery.scss';
+@import "../../../assets/sass/admin/listitemgallery/popupcarditemsgallery.scss";
 </style>

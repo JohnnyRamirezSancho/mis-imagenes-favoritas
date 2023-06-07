@@ -20,6 +20,22 @@ const router = createRouter({
       path: "/login",
       name: "login",
       component: () => import("../views/Login.vue"),
+    },
+    {
+      path: "/listitemgallery",
+      name: "listitemgallery",
+      component: () => import("../views/admin/ListItemsGallery.vue"),
+    },
+    {
+      path: "/additemgallery",
+      name: "additemgallery",
+      component: () => import("../views/admin/AddItemGallery.vue"),
+    },
+    {
+      path: "/imagegallery/:id",
+      name: "imagegallery",
+      props: true,
+      component: () => import("../views/admin/ImageGallery.vue"),
     }
   ]
 })

@@ -1,0 +1,31 @@
+main {
+  min-height: 86vh;
+  .galleryCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    .galleryCards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .galleryCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    .galleryCards {
+      grid-template-columns: 1fr;
+    }
+  }
+}

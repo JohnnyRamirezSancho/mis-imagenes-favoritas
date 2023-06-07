@@ -1,0 +1,86 @@
+@import "../../variables";
+
+.cardGallery {
+  border-radius: 0;
+  border: none;
+  position: relative;
+  border: 1px solid $darkGrey;
+  .openVisor {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    img {
+      width: 30px;
+      transition: all 0.5s;
+    }
+  }
+  .imageCardGallery {
+    figure {
+      aspect-ratio: 1/1;
+      margin: 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .textCardGallery {
+    height: 50px;
+    background-color: $darkGreyTrans;
+    transition: all 0.5s;
+    h2 {
+      font-size: 1.25rem;
+      line-height: 50px;
+      color: white;
+      margin: 0;
+      padding: 0 20px;
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    figure {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 5px;
+      transition: all 0.3s;
+      text-align: center;
+      margin: 0;
+      img {
+        width: 30px;
+      }
+      &.delete {
+        background-color: $red;
+      }
+      &.edit {
+        background-color: $orange;
+      }
+      &.image {
+        background-color: $green;
+      }
+      &:hover {
+        width: 100px;
+        border-radius: 10px;
+
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}

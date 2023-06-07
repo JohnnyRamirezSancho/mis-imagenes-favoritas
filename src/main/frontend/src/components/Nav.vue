@@ -54,6 +54,14 @@ async function closeSession() {
           </li>
 
           <li class="nav-item">
+            <RouterLink to="/listitemgallery" class="nav-link">Admin gallería</RouterLink>
+          </li>
+
+          <li class="nav-item">
+            <RouterLink to="/additemgallery" class="nav-link">Add item</RouterLink>
+          </li>
+
+          <li class="nav-item">
             <a
               href="#"
               class="nav-link"

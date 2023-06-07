@@ -18,7 +18,7 @@ function showCard(id) {
     <div class="imageCardGallery">
       <figure>
         <img
-        :src="`${item.imageGallery.image}`"
+        :src="`http://localhost:8080/${item.imageGallery.image}`"
         :alt="`${item.title}`"
         />
       </figure>
