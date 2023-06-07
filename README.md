@@ -102,7 +102,7 @@ Debe incluir:
 
 ## Desarrollo
 ### Frontend
-Utilizando Figma, desarrollamos una prototipo que nos sirviera de referencia para poder componer nuestra aplicación web, tanto la parte estrutural (HTML), como viual (SCSS). Optamos por un diseño com imágenes amplias, que cubran prácticamente toda la pantalla del dispositio, utilizando Bootstrap para, entre otras cosas, agilizar la creación del carrusel de imágenes.
+Utilizando Figma, desarrollamos una prototipo que nos sirviera de referencia para poder componer nuestra aplicación web, tanto la parte estrutural (HTML), como viual (SCSS). Optamos por un diseño responsive com imágenes amplias, que cubran prácticamente toda la pantalla del dispositio, utilizando Bootstrap para, entre otras cosas, agilizar la creación del carrusel de imágenes.
 Usamos VUE para añadir las funcionalidades necesarias: conexión a la API que nos proporcionará la gestión de las imágenes, aplicación de una sola página, gestión de vistas, stores para el almacenamiento de datos compartidos dentro de las vistas de la web, actualización en tiempo de ejecución de los contenidos, gestión de usuarios registrados (mostrar/ocultar contenido, limitación de navegación según roles, etc)... 
 
 ### Backend
