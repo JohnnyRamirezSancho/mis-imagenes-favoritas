@@ -11,7 +11,7 @@ const imageGalleryItem = imagesGallery();
 function updateItem(id, itemGallery, imageGallery) {
   itemGalleryItem.itemsGalleryObject = itemGallery;
   imageGalleryItem.imagesGalleryObject = imageGallery;
-  router.push("/updateitemgallery" + "/" + id);
+  router.push("/edititemgallery" + "/" + id);
 }
 
 function updateImage(id, itemGallery, imageGallery) {
@@ -79,7 +79,7 @@ function showCard(id) {
         />
       </figure>
       <figure class="edit">
-        <img src="../../../assets/img/edit.png" alt="Edit"  />
+        <img src="../../../assets/img/edit.png" alt="Edit" @click="updateItem(item.id, item, item.imageGallery)"  />
       </figure>
       <figure class="image">
         <img src="../../../assets/img/image.png" alt="Image" @click="updateImage(item.id, item, item.imageGallery)" />

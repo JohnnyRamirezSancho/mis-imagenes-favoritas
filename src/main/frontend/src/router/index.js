@@ -36,6 +36,12 @@ const router = createRouter({
       name: "imagegallery",
       props: true,
       component: () => import("../views/admin/ImageGallery.vue"),
+    },
+    {
+      path: "/edititemgallery/:id",
+      name: "edititemgallery",
+      props: true,
+      component: () => import("../views/admin/EditItemGallery.vue"),
     }
   ]
 })
