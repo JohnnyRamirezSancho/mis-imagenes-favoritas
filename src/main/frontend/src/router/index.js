@@ -25,23 +25,27 @@ const router = createRouter({
       path: "/listitemgallery",
       name: "listitemgallery",
       component: () => import("../views/admin/ListItemsGallery.vue"),
+      meta: { requiresAuth: true },
     },
     {
       path: "/additemgallery",
       name: "additemgallery",
       component: () => import("../views/admin/AddItemGallery.vue"),
+      meta: { requiresAuth: true },
     },
     {
       path: "/imagegallery/:id",
       name: "imagegallery",
       props: true,
       component: () => import("../views/admin/ImageGallery.vue"),
+      meta: { requiresAuth: true },
     },
     {
       path: "/edititemgallery/:id",
       name: "edititemgallery",
       props: true,
       component: () => import("../views/admin/EditItemGallery.vue"),
+      meta: { requiresAuth: true },
     }
   ]
 })

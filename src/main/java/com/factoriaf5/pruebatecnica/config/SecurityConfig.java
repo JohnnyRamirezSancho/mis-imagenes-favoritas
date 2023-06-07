@@ -39,6 +39,7 @@ public class SecurityConfig {
                                                 .deleteCookies("JSESSIONID"))
                                 .authorizeHttpRequests((auth) -> auth
                                                 .antMatchers("/**").permitAll()
+                                                .antMatchers("/api").hasRole("ADMIN")
                                                 .anyRequest()
                                                 .authenticated())
                                 .userDetailsService(service)

@@ -54,11 +54,11 @@ async function closeSession() {
           </li>
 
           <li class="nav-item">
-            <RouterLink to="/listitemgallery" class="nav-link">Admin gallería</RouterLink>
+            <RouterLink to="/listitemgallery" class="nav-link" v-if="isAuthenticated.roles == 'ROLE_ADMIN'">Admin gallería</RouterLink>
           </li>
 
           <li class="nav-item">
-            <RouterLink to="/additemgallery" class="nav-link">Add item</RouterLink>
+            <RouterLink to="/additemgallery" class="nav-link" v-if="isAuthenticated.roles == 'ROLE_ADMIN'">Add item</RouterLink>
           </li>
 
           <li class="nav-item">
